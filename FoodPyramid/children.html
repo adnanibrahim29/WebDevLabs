@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Pyramid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class = "header">
+        <a href = 'index.html' class = "logo">Food <span> Pyramid</span></a>
+    
+       <nav>
+        <a href = 'index.html'>Adult</a>
+        <a href = 'children.html' class="active">Children</a>
+    </nav>
+    </header>
+
+    <div class="labels">
+        <h2>Key</h2>
+        <h4><span class="k1">High Fat, Sugar</span></h4>
+        <h4><span class="k2">Fats, Spreads, Oils</span></h4>
+        <h4><span class="k3">Meat, Poultry, Fish, Eggs</span></h4>
+        <h4><span class="k4">Milk, Yoghurt, Cheese</span></h4>
+        <h4><span class="k5">Wholemeal Cereals, breads, Pasta, Rice</span></h4>
+        <h4><span class="k6">Vegetables, Salad, Fruit</span></h4>
+    </div>
+
+    <div class="recomend">
+        <h2>Recomended Daily Intake</h2>
+        <h4><span class="k1">1 (in very Small Amounts)</span></h4>
+        <h4><span class="k2">2 Servings a Day</span></h4>
+        <h4><span class="k3">3 Serving a Day</span></h4>
+        <h4><span class="k4">2 (Minimum 2)</span></h4>
+        <h4><span class="k5">2 - 3 Servings a Day</span></h4>
+        <h4><span class="k6">3 - 4 Servings a Day</span></h4>
+    </div>
+
+    <div class="pyramid">
+        <h3>Childrens <span class="about">Food</span> Pyramid</h3>
+        <div class="one">
+            <div class="button-container1">
+                <button class="circle-button increase" data-target="viewer1">+</button>
+                <span class="circle-viewer" data-viewer="viewer1">0</span>
+                <button class="circle-button decrease" data-target="viewer1">-</button>
+            </div>
+        </div>
+
+        <div class="two">
+            <div class="button-container2">
+                <button class="circle-button increase" data-target="viewer2">+</button>
+                <span class="circle-viewer" data-viewer="viewer2">0</span>
+                <button class="circle-button decrease" data-target="viewer2">-</button>
+            </div>
+        </div>
+
+        <div class="three">
+            <div class="button-container3">
+                <button class="circle-button increase" data-target="viewe3">+</button>
+                <span class="circle-viewer" data-viewer="viewe3">0</span>
+                <button class="circle-button decrease" data-target="viewe3">-</button>
+            </div>
+        </div>
+
+        <div class="four">
+            <div class="button-container4">
+                <button class="circle-button increase" data-target="viewer4">+</button>
+                <span class="circle-viewer" data-viewer="viewer4">0</span>
+                <button class="circle-button decrease" data-target="viewer4">-</button>
+            </div>
+        </div>
+
+        <div class="five">
+            <div class="button-container5">
+                <button class="circle-button increase" data-target="viewer5">+</button>
+                <span class="circle-viewer" data-viewer="viewer5">0</span>
+                <button class="circle-button decrease" data-target="viewer5">-</button>
+            </div>
+        </div>
+
+        <div class="six">
+            <div class="button-container6">
+                <button class="circle-button increase" data-target="viewer6">+</button>
+                <span class="circle-viewer" data-viewer="viewer6">0</span>
+                <button class="circle-button decrease" data-target="viewer6">-</button>
+            </div>
+        </div>
+
+        <p>Record <span class="about"> your </span>Day!</p>
+        <label>Choose a date:</label>
+
+        <input type="date" id="date" value="YYYY-MM-DD"/>
+        <div class="submit" onclick="submit()">Submit</div>
+            
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
