@@ -1,0 +1,413 @@
+body {
+    padding: 20% 20% 20% 20% !important;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 10%;
+    background: #131c2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.header a {
+    color: white;
+}
+
+.header span {
+    color: gold;
+}
+
+/* Navbar */
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .3s;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+nav a:hover,
+nav a.active {
+    color: gold;
+}
+
+.pyramid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translateY(-20%);
+}
+
+.labels {
+    position: absolute;
+    top: 50%;
+    left: -150px;
+    transform: translateY(-85%);
+    line-height: 1.5;
+    margin-left: 25%;
+    margin-top: 10%;
+    animation: fadeIn 4s ease-in-out;
+}
+
+.recomend {
+    position: absolute;
+    top: 50%;
+    right: -150px;
+    transform: translateY(-85%);
+    line-height: 1.5;
+    margin-right: 20%;
+    margin-top: 10%;
+    animation: fadeIn 4s ease-in-out;
+}
+
+h4 .k1 {
+    color: #e74c3c;
+}
+
+h4 .k2 {
+    color: #f1c40f;
+}
+
+h4 .k3 {
+    color: #FFFF00;
+}
+
+h4 .k4 {
+    color: #3498db;
+}
+
+h4 .k5 {
+    color: #964b00;
+}
+
+h4 .k6 {
+    color: #2ecc71;
+}
+
+.pyramid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pyramid h3 {
+    font-size: 24px;
+    margin-top: -100px;
+}
+
+.one {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 120px solid #e74c3c;
+    margin-bottom: 10px;
+    animation: slideRight 1s ease-in-out;
+}
+
+.one:hover {
+    border-bottom: 120px solid #FF7F7F;
+    transform: translateY(-25px);
+    transition: 0.5s;
+}
+
+.two {
+    width: 120px;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 60px solid #f1c40f;
+    margin-bottom: 10px;
+    animation: slideLeft 1s ease-in-out;
+}
+
+.two:hover {
+    border-bottom: 60px solid #FFD580;
+    transform: translateY(-25px);
+    transition: 0.5s;
+}
+
+.three {
+    width: 180px;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #FFFF00;
+    animation: slideRight 1s ease-in-out;
+}
+
+.three:hover {
+    border-bottom: 70px solid #fffdd0;
+    transform: translateY(-25px);
+    transition: 0.5s;
+}
+
+
+.four {
+    width: 250px;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid #3498db;
+    animation: slideLeft 1s ease-in-out;
+}
+
+.four:hover {
+    border-bottom: 80px solid #7fb3d5;
+    transform: translateY(-25px);
+    transition: 0.5s;
+}
+
+
+.five {
+    width: 330px;
+    height: 0;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 90px solid #964b00;
+    animation: slideRight 1s ease-in-out;
+}
+
+.five:hover {
+    border-bottom: 90px solid #c37d3a;
+    transform: translateY(-25px);
+    transition: 0.5s;
+}
+
+.six {
+    width: 420px;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #2ecc71;
+    animation: slideLeft 1s ease-in-out;
+}
+
+.six:hover {
+    border-bottom: 100px solid #90EE90;
+    transform: translateY(-25px);
+    transition: 0.5s;
+}
+
+
+.button-container1 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.button-container2 {
+    margin-top: 14px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.button-container3 {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.button-container4 {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.button-container5 {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.button-container6 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.circle-button,
+.circle-viewer {
+    background-color: #7f8c8d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50%;
+    border: none;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.circle-viewer {
+    animation: fadeIn 4s ease-in-out;
+}
+
+.circle-button {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.circle-button:hover {
+    background-color: #95a5a6;
+}
+
+.one:hover .circle-button {
+    opacity: 1;
+}
+
+.two:hover .circle-button {
+    opacity: 1;
+}
+
+.three:hover .circle-button {
+    opacity: 1;
+}
+
+.four:hover .circle-button {
+    opacity: 1;
+}
+
+.five:hover .circle-button {
+    opacity: 1;
+}
+
+.six:hover .circle-button {
+    opacity: 1;
+}
+
+.pyramid h3 {
+    font-size: 20px;
+}
+
+.pyramid .about {
+    color: gold;
+}
+
+.submit {
+    margin-top: 10px;
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    display: inline-block;
+
+}
+
+.submit:hover {
+    background-color: gold;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
