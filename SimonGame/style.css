@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+body {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.simon {
+    height: 25rem;
+    width: 25rem;
+    background-color: #101010;
+    border-radius: 50%;
+    position: relative;
+}
+
+.indicator {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 130%);
+    z-index: 3;
+}
+
+.color1,
+.green {
+    background-color: #00A74A;
+
+}
+
+.color2,
+.red {
+    background-color: #9F0F17;
+
+}
+
+.color3,
+.blue {
+    background-color: #094A8F;
+
+}
+
+.color4,
+.yellow {
+    background-color: #CCA707;
+
+}
+
+/* General styling for color parts */
+.color-part,
+.color1,
+.color2,
+.color3,
+.color4 {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Positioning for color parts */
+
+.color1 {
+    top: -5%;
+    left: -5%;
+}
+
+.color2 {
+    top: -5%;
+    right: -5%;
+}
+
+.color3 {
+    bottom: -5%;
+    right: -5%;
+}
+
+.color4 {
+    bottom: -5%;
+    left: -5%;
+}
+
+/* Center container styling */
+.container {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 45%;
+}
+
+/* Score displays */
+#highScore,
+#count {
+    background-color: lightgrey;
+    color: black;
+    font-size: 2em;
+    height: 60px;
+    width: 75px;
+    display: grid;
+    place-items: center;
+    border-radius: 10%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#highScore {
+    /* Positioned to the left */
+    left: 25%;
+    
+}
+
+#count {
+     /* Positioned to the right */
+    left: 75%;
+   
+}
+
+/* Start button styling */
+#start {
+    background-color: lightgrey;
+    font-size: 2em;
+    height: 60px;
+    width: 110px;
+    border-radius: 10%;
+    border: none;
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* Responsive to clicks: darkening color on active state */
+.color-part:active,
+.color1:active,
+.color2:active,
+.color3:active,
+.color4:active {
+    background-color: darken(#9F0F17, 10%);
+}
+
+/* Highlight effect */
+.color-part.highlight,
+.color1.highlight,
+.color2.highlight,
+.color3.highlight,
+.color4.highlight {
+    filter: brightness(1.5);
+}
+
+#timer {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+    z-index: 2;
+}
+
+.active {
+    animation: flash 0.3s linear;
+}
+
+@keyframes flash {
+    0% {
+        background-color: #fff;
+        opacity: 1;
+    }
+}
