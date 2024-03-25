@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>Student Grading Table</header>
+
+    <button class="buttons" id="addRowBtn">Add New Student</button>
+    <button class="buttons" id="addColumnBtn">Add New Assignment</button>
+    <button class="buttons" id="save">Save</button>
+    <button class="buttons" id="restore">Restore</button>
+
+    <table id="gradeTable">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Student Id</th>
+                <th>Assignment 1</th>
+                <th>Assignment 2</th>
+                <th>Assignment 3</th>
+                <th>Assignment 4</th>
+                <th>Assignment 5</th>
+                <th>Average (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td contenteditable="true">Joe Bloggs</td>
+                <td contenteditable="true">123456789</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="average">-</td>
+            </tr>
+
+            <tr>
+                <td contenteditable="true">Jim Bloggs</td>
+                <td contenteditable="true">987654321</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="average">-</td>
+            </tr>
+
+            <tr>
+                <td contenteditable="true">Isabelle Cheese</td>
+                <td contenteditable="true">974285136</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="average">-</td>
+            </tr>
+
+            <tr>
+                <td contenteditable="true">Alex Johnson</td>
+                <td contenteditable="true">395461782</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="average">-</td>
+            </tr>
+
+            <tr>
+                <td contenteditable="true">Lucas Davis</td>
+                <td contenteditable="true">728354619</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="average">-</td>
+            </tr>
+
+            <tr>
+                <td contenteditable="true">Noah Kim</td>
+                <td contenteditable="true">719623485</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="average">-</td>
+            </tr>
+
+            <tr>
+                <td contenteditable="true">Aiden Martinez</td>
+                <td contenteditable="true">485273916</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="average">-</td>
+            </tr>
+
+            <tr>
+                <td contenteditable="true">Ethan Smith</td>
+                <td contenteditable="true">143659872</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="average">-</td>
+            </tr>
+
+            <tr>
+                <td contenteditable="true">Maria Garcia</td>
+                <td contenteditable="true">189547263</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="average">-</td>
+            </tr>
+
+            <tr>
+                <td contenteditable="true">Sophia Patel</td>
+                <td contenteditable="true">325861497</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="values">-</td>
+                <td class="average">-</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <div id="unsubmittedCount"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
