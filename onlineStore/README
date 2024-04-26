@@ -1,0 +1,12 @@
+I am using an XAMPP server
+
+I have included the localhost password and Maynooth server login
+
+When downloaded you may have to put the downladed folder into XAMPP directory 
+and inside the HTDOCS folder (where your XAMPP directory is located)
+put all the code files into the HTDOCS folder
+
+Then you can run the code by typing localhost/assignment-04-22325166/assignment-04.php into your browser
+
+if the link doesnt work localhost:8080/assignment-04-22325166/assignment-04.php should work
+
